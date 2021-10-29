@@ -13,7 +13,7 @@ function PostForm() {
     body: "",
   });
 
-  const [createPost, { error }] = useMutation(CREATE_POST_MUTATION, {
+  const [createPost] = useMutation(CREATE_POST_MUTATION, {
     variables: values,
     update(proxy, result) {
       /* Fetching the data from the cache and storing it inside the
